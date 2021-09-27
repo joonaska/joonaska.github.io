@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0107 - Onko karkausvuosi? </title>
+</head>
+<body>
+    <H1>Onko karkausvuosi?</H1>
+    <form id="lomake">
+
+        Anna vuosiluku: 
+        <input type="number" id=syote>
+        <button type="button" onclick="tulos(lomake.syote.value)">
+            Kokeile!
+            </button>
+
+
+    </form>
+
+    <div id="vastaus"></div>
+    
+    <script>
+
+        function tulos(a){
+            
+        // vertaillaan syötettä, ehdoilla.
+        if((a % 4 == 0) && (a % 100 != 0) || (a % 400 == 0)){
+           
+            
+         let div = document.getElementById("vastaus");
+         div.innerHTML = "<h2>" + a + " -> On karkausvuosi!"+"</h2>";
+    }
+    else{
+        let div = document.getElementById("vastaus");
+         div.innerHTML = "<h2>" + a + " -> Ei ole karkausvuosi!"+"</h2>";
+    }
+}
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0103 - taulukko</title>
+</head>
+<body>
+    <p id = "tulostus"></p>
+    <script>
+        
+        let taulukko = ["JavaScriptin", "opiskelu", "on", "ihanaa!"];
+        
+        let lause = "";
+
+        for(let sanat of taulukko){
+            lause = lause + ' ' + sanat;
+        }
+    console.log(lause);
+    document.getElementById("tulostus").innerHTML = lause;
+    </script>
+    
+</body>
+</html>

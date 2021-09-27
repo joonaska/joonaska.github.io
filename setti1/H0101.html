@@ -1,0 +1,36 @@
+<!-- Kirjoita HTML-tiedostoon JavaScript-ohjelma,
+     jossa on määritelty muuttujat var v1 = "Haloo" ja var v2 = "Maailma!". 
+     Ohjelmasi muodostaa ao. muuttujista merkkinonon <h1>Haloo Maailma!</h1> sijoittaen tuloksen muuttujaan tulos ja 
+     näyttää tuloksen P-elementissä getElementById/innerHTML-yhdistelmää käyttäen.
+     Muuttujan tulos sisältö tulostetaan myös selaimen web-konsoliin (console.log).-->
+
+     
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>H0101</title>
+    </head>
+    <body>
+       
+        <p id="kohde"></p>
+        <script>
+            var v1 = 'Haloo';
+            var v2 = 'Maailma!';
+
+            var tulos = '<h1>'+v1+' '+v2+'</h1>';
+
+            // etsitään p-elementti
+
+            let para = document.getElementById('kohde');
+            para.innerHTML = tulos;
+
+            // tulostetaan muuttujan sisältö consolille.
+            console.log(tulos);
+        </script>
+        
+    </body>
+    </html>
+

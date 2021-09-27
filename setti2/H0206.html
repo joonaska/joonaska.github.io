@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0206 - vauhtilaskin</title>
+</head>
+<body>
+    <h1>Vauhtilaskin</h1>
+    <form id="taulukko">
+      Tunnit: <br>
+      <input type="number" id="h"> <br>
+      Minuutit: <br>
+      <input type="number" id="min"> <br>
+      Sekunnit: <br>
+      <input type="number" id="sec"> <br>
+      Kilometrit: <br>
+      <input type="number" id= "km"> <br>
+
+      <button  >Laske vauhdit!</button>
+      <p id="result"></p>
+
+    </form>
+
+    <script>
+    class Vauhtilaskin{
+        constructor(tunnit,minuutit,sekunnit,kilometrit){
+            this.tunnit = tunnit
+            this.minuutit = minuutit
+            this.sekunnit = sekunnit
+            this.kilometrit = kilometrit
+        }
+        
+
+        //setterit
+
+        
+
+        //getterit
+         get kmhpace() {
+             return this.calcKmhPace();
+         }
+         get minkmpace(){
+            return this.calcMinkmPace();
+        }
+
+        // laskumetodit
+
+        calcKmhPace() {
+            let tunnit = document.getElementById('h').value+(document.getElementById('min').value*60+document.getElementById('sec').value)/3600;
+            let kmh = document.getElementById('km').value/tunnit;
+            return tunnit
+            return kmh
+           
+           
+        }
+        calcMinkmPace() {
+            
+        }
+       
+      
+    }
+    console.log(Vauhtilaskin.calcKmhPace)
+   
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!---Tee funktio, jolle voidaan välittää parametrina kolme lukua. 
+Funktion tulee tulostaa web-konsolille luvuista suurin.
+Määrittele käyttöösi kolme muuttujaa ja tulosta niiden arvot web-konsolille. 
+Kutsu tekemääsi funktiota, joka tulostaa luvuista suurimman web-konsolille.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0104 - Funktio</title>
+</head>
+<body>
+
+    <script>    
+    function lukuJono(a, b, c){
+    
+        return Math.max(a,b,c);
+          
+    }
+    let ekaArvo = 12;
+    let tokaArvo = 18;
+    let kolmasArvo = 90;
+
+    console.log(("Suurin luku on: " +lukuJono(ekaArvo,tokaArvo,kolmasArvo)));
+    
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0205 - person</title>
+</head>
+<body>
+    <script>
+        // luodaan persoonien luonti functio
+        function Person(name,age,phone,email){
+            this.name = name;
+            this.age = age;
+            this.phone = phone;
+            this.email = email;
+
+            // lisätään ikää yhdellä, joka kerta kun kutsutaan.
+            this.lisaaIkaa = function(){
+                this.age = this.age + 1;
+            }
+           
+            
+        }
+         // luodaan persoonat kolmekappalletta
+        let jussi = new Person("Jussi", 25,"040-45565534" , "jussi@suomi.fi")
+        let panu = new Person("Panu", 52,"04500232333" , "panu@suomi.fi")
+        let sikke = new Person("Sikke", 82," 05023334000",  "sikke@suomi.fi")
+       // tulostellaan logiin
+        console.log(panu)
+        // panulle ikävuosia lisää
+        panu.lisaaIkaa();
+        console.log(panu)
+        console.log(jussi)
+        console.log(sikke)
+        
+
+            
+        
+    </script>
+    
+</body>
+</html>

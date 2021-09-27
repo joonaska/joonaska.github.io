@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0204 - Lady gaga</title>
+</head>
+<body onload="startSinging()">
+
+    <script>
+const singer = "Lady Gaga"
+            let result
+            let fireworksId
+
+            function startSinging() {
+
+                result = document.getElementById('result')
+                //console.log("Start Singing")
+                result.innerHTML = 'OMG - Lady Gaga start singing!'
+                //ilotulitukset?
+                fireworksId = setInterval( () => { fireworks() }, 1000 )
+                //lopetus
+                setTimeout( () => { stopSinging() }, 5000 )
+            }
+
+            function fireworks() {
+                //console.log('NICE - fireworks!')
+                result.innerHTML += '<br>NICE - fireworks!'
+            }
+
+            function stopSinging() {
+                result.innerHTML += '<br>WOW - It was the best concert in my life....'
+                clearInterval(fireworksId)
+            }
+
+
+
+    </script>
+       <p id="result"></p>
+</body>
+</html>

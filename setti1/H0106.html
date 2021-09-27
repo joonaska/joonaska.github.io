@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0106- tehtävä</title>
+</head>
+<body>
+    <h1>JavaScript-taulukon läpikäynti</h1>
+    <h2>for- ja for...of-silmukoilla</h2>
+    <hr>
+    <form>
+        Taulukon alkiot ovat: <br>
+        <p id=tulosrivit></p>
+
+        Taulukon alkioiden: 
+    <p id="arvot"></p>
+    
+</form>
+    <script>
+
+let taulukko = [11, 22, 33, 44];
+let summa = 0;
+let lukumaara = 0;
+let keskiarvo = (taulukko[0]+taulukko[1]+taulukko[2]+taulukko[3]) / taulukko.length;
+let tulosrivit = '';
+
+for(lukumaara of taulukko){
+    lukumaara = taulukko.length 
+}
+
+for(summa of taulukko){
+    summa = taulukko[0] + taulukko[1] + taulukko[2] + taulukko[3]
+}
+for(let i = 0; i < taulukko.length; i++){
+    tulosrivit += "taulukko["+[i]+"]" + " = " + taulukko[i] + "<br/>";
+
+      
+}
+
+
+document.getElementById("tulosrivit").innerHTML = tulosrivit
+
+document.getElementById("arvot").innerHTML ="Lukumäärä: " +lukumaara +"<br/>"
+ +"Summa: " +summa+"<br/>" + "Keskiarvo: "+ keskiarvo.toFixed([1]);
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

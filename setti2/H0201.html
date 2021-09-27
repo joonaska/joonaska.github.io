@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0201 - Laskuri</title>
+</head>
+<body>
+    <h2>Laske luvut yhteen</h2>
+    <form id="lomake">
+        <input type=text id="syote1"><br>
+        <input type=text id="syote2"><br>
+        <button type="button" onclick="tulostaSumma(lomake.syote1.value, lomake.syote2.value)">Laske</button>
+     </form>
+
+     <div id="results"></div>
+
+    <script>
+        function tulostaSumma(a,b){
+            let div = document.getElementById("results");
+            div.innerHTML = "summa= " +laskeSumma();
+        }
+
+       function laskeSumma(a,b){
+           let tulos = 0;
+         tulos = Number(lomake.syote1.value) + Number(lomake.syote2.value);
+        return tulos;
+        
+       }
+       
+       
+       
+
+    </script>
+    
+</body>
+</html>
