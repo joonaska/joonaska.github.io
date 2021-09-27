@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H0301</title>
+</head>
+ 
+<script>
+
+  // tehdään hölmö funktio jonka atribuuttia vertailemalla saadaan haluttu kuva. isommassa mittakaavassa varmaan ei käytännöllinen.
+  function naytaKuva(a){
+    if ( a === 1){
+      document.getElementById("kuva").src = "../images/kaiutin.jpg"
+    }
+    else if (a === 2 ){
+      document.getElementById("kuva").src = "../images/vuoristo.jpg"
+    }
+    else if( a === 3){ 
+      document.getElementById("kuva").src = "../images/laituri.jpg"
+    }
+    else{
+      document.getElementById("kuva").src ="../images/kaiutin.jpg"
+    }
+  }
+ </script>
+<body>
+  <p id="linkit">
+    
+    <a href="#" onclick="naytaKuva(1)">Kaiutin</a>
+    <a href="#" onclick ="naytaKuva(2)">Vuoristo</a>
+    <a href="#" onclick = "naytaKuva(3)">Laituri</a>
+  
+  </p>
+
+  <img id="kuva" src="../images/kaiutin.jpg" alt="vaihtuvakuva">
+ 
+
+
+</body>
+</html>

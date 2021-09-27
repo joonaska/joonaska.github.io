@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0304- SimpleToDo lista</title>
+    <script>
+        function addList(){
+            let ul = document.getElementById("todos")
+            let newTodo = document.getElementById("newTodo")
+            // lisää addeventlistener
+            let li = document.createElement("li") //<li>"call esa!" </li>
+            let text = document.createTextNode(newTodo.value)
+
+            li.appendChild(text)//<li>"call esa!" </li>
+            ul.appendChild(li)// //<ul><li>"call esa!" </li> </ul>
+
+            newTodo.value = ""
+        }
+        
+        function clearList() {
+            let ul = document.getElementById("todos")
+            
+            while(ul.hasChildNodes()) {
+            ul.removeChild(ul.firstChild);
+}
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>SimpleToDo</h1>
+    <p>ToDo:</p>
+    <input type="text" id="newTodo">
+    <button onclick="addList()">Lisää</button>
+    <button onclick="clearList()">Tyhjää lista</button>
+    <ul id="todos">
+
+    </ul>
+
+    
+</body>
+</html>
