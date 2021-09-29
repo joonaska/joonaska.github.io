@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tulosta tasoitukset</title>
+
+<script>
+const hcpdata = [{ "name": "Ari", "hcp": 54 },
+               { "name": "Pasi", "hcp": 5 },
+               { "name": "Seppo", "hcp": 20 }];
+// funktio joka nappiapainamalla aktivoituu.
+function naytaTasoitus(){
+ // käydään taulukko läpi ja luodaan jokaisesta kohdasta li solmu + sisältö ul solmuun.
+ for (let i = 0; i < hcpdata.length; i++){
+   let ul = document.getElementById("hcplist")
+   let li = document.createElement("li")
+
+   let text = document.createTextNode(hcpdata[i].name +  " " +hcpdata[i].hcp )
+   // liitetään tuotokset.
+   li.appendChild(text)
+   ul.appendChild(li);
+ }
+ 
+}
+</script>
+
+</head>
+<body>
+        <button onclick="naytaTasoitus()">Tulosta tasoitukset</button>
+    <ul id="hcplist"></ul>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H0305 - Mikä väri? Mikä juhla?</title>
+  <style>
+    #container { background-color: aquamarine; width: 30%; border: black; border-style: double;}
+    #nappi {padding: 10px;
+            margin-top: 15px;}
+    #result{background-color: yellow; padding: 5%; border: black; border-style: groove;  }        
+  </style>
+
+
+</head>
+
+
+<body>
+<div id="container">
+  <h2>Mikä väri?</h2>
+  <select name="varit" id="varit">
+    <option value="#FF0000">Punainen</option>
+    <option value="#FFFF00">Keltainen</option>
+    <option value="#0000FF">Sininen</option>
+    <option value="#F660AB">Pinkki</option>
+    <option value="#16F529">Vihreä</option>
+  </select>
+  <h2>Mikä juhla?</h2>
+  <input type="text" id="vastaus2" > <br>
+
+  <button id="nappi" onclick="vaihdaVari()"> Vaihda taustaväri</button>
+
+  <div id="result">
+
+    <h2>Tulosalue</h2>
+
+    <p id="varikoodi"></p>
+    <p id="tulos"></p>
+
+  </div>
+</div>
+<script>
+
+  // inputille kirjoitusta seuraava eventlistener
+  const input1 = document.querySelector('#vastaus2');
+  const tulos = document.querySelector('#tulos');
+  input1.addEventListener('input',function(){
+   
+      tulos.textContent = this.value;
+  
+  })
+
+
+  // onkeypress="return /[a-zåäö]/i.test(event.key)"
+
+  // eventlisteneri joka karsii numerot pois inputista
+ const check = document.getElementById('vastaus2')
+ check.addEventListener('keydown', function (e) {
+    // eventit vahtii mitä nappia painellaan.
+    const key = e.which || e.keyCode;
+
+    // keydown koodeilla karsittu numerot pois
+    if (key >= 48 && key < 58 || key >= 96 && key < 106) {
+        // estää jos osuu väärille
+        e.preventDefault();
+    }
+});
+  
+
+  // selectin valuen tarkastaminen ja siirtäminen tuloksiin
+
+ const input2 = document.getElementById("varit")
+ input2.addEventListener('change', function(){
+   let syote = input2.value;
+   let tuloste = document.getElementById("varikoodi")
+   tuloste.innerHTML = "Valittu väri on: "+syote
+ })
+
+ function vaihdaVari(){
+   let vari = input2.value;
+   document.getElementById('result').style.backgroundColor= vari
+
+
+
+ }
+
+
+
+
+
+
+  
+  </script>
+
+</body>
+</html>

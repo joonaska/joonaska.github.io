@@ -9,10 +9,16 @@
         function addList(){
             let ul = document.getElementById("todos")
             let newTodo = document.getElementById("newTodo")
-            // lisää addeventlistener
+            
+           
             let li = document.createElement("li") //<li>"call esa!" </li>
             let text = document.createTextNode(newTodo.value)
-
+            
+            // poistetaaan yksi rivi kerrallaan, klikkaamalla
+            li.addEventListener("click",function(event){
+                ul.removeChild(li)
+                event.stopPropagation();
+            })
             li.appendChild(text)//<li>"call esa!" </li>
             ul.appendChild(li)// //<ul><li>"call esa!" </li> </ul>
 
@@ -24,9 +30,12 @@
             
             while(ul.hasChildNodes()) {
             ul.removeChild(ul.firstChild);
-}
+            }
 
         }
+        
+
+      
 
     </script>
 </head>
