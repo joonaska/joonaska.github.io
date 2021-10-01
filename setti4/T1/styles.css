@@ -1,0 +1,46 @@
+/*Tyylit kaikki talot sisältävälle DIV-elementeille */
+#houses {
+  width: 600px;
+  height: 800px;
+  justify-items: left;
+  overflow: auto;
+  margin: 10px;
+}
+
+/*Tyylit yhden talon DIV-elementille*/
+.houseContainer {
+  display: block;
+  border: 1px solid grey;
+  width: 570px;
+  height: 165px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2px;
+  margin: 2px;
+  padding: 2px;
+}
+/*Tyylit talon kuvalle */
+.houseImage {
+  width: 225px;
+  height: 160px;
+  float: left;
+  margin: 2px;
+}
+/*Tyylit talon otsikkoteksteille */
+p.header {
+  font-size: 14px;
+  font: bold;
+}
+p.name {
+  font-size: 14px;
+}
+p.price {
+  font-size: 10px;
+}
+p.size {
+  font-size: 11px;
+}
+/*Talon kuvaustekstin tyylit*/
+p.text {
+  font-style: italic;
+  font-size: 10px;
+}
