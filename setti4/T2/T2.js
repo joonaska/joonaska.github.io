@@ -103,7 +103,6 @@ async function filterSize() {
     return size;
   }
   let size = etsiKoko(houses, 'size');
-  console.log(size);
 
   let check1 = document.getElementById('cbox1');
   let housec = document.getElementsByClassName('houseContainer');
