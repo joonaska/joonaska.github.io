@@ -29,3 +29,5 @@ H0303: /4p  !!! virhevaroitus puuttuu
 H0304: 6/6p tehty tunnilla, itse lisätty yhden rivin poisto klikkaamalla.
 H0305: 6/6p toimii ja kukkuu pyydetysti 
 
+H0401: 6/6 toimii ja kukkuu
+H0402: /6p !!!! pientä viilausta vaille filteröinti
