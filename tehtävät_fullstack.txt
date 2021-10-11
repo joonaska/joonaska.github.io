@@ -31,6 +31,7 @@ H0305: 6/6p toimii ja kukkuu pyydetysti
 
 H0401: 6/6 toimii ja kukkuu
 H0402: /6p !!!! pientä viilausta vaille filteröinti
+H0403:     !!!!! tehtävä
 
 H0501: 2/2p toimii
 H0502: 4/4p käy ja kukkuu
