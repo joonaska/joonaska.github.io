@@ -6,67 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H0206 - vauhtilaskin</title>
 </head>
-<body>
+<body  >
     <h1>Vauhtilaskin</h1>
-    <form id="taulukko">
+    <form id="taulukko" onsubmit="event.preventDefault();" name="sample" method="POST" >
       Tunnit: <br>
-      <input type="number" id="h"> <br>
+      <input type="number" id="h" placeholder="0"> <br>
       Minuutit: <br>
-      <input type="number" id="min"> <br>
+      <input type="number" id="min" placeholder="0"> <br>
       Sekunnit: <br>
-      <input type="number" id="sec"> <br>
+      <input type="number" placeholder="0" id="sec"> <br>
       Kilometrit: <br>
-      <input type="number" id= "km"> <br>
+      <input type="number" id= "km" placeholder="0.00"> <br>
+      
+      
 
-      <button  >Laske vauhdit!</button>
-      <p id="result"></p>
+      <button id="btn"   >Laske vauhdit!</button>
+      <div id="result"></div>
 
     </form>
 
     <script>
+        
+        
     class Vauhtilaskin{
+        
         constructor(tunnit,minuutit,sekunnit,kilometrit){
             this.tunnit = tunnit
             this.minuutit = minuutit
             this.sekunnit = sekunnit
-            this.kilometrit = kilometrit
+            this.kilometrit =kilometrit
         }
         
-
-        //setterit
-
         
-
+      
         //getterit
          get kmhpace() {
-             return this.calcKmhPace();
+            return this.calcKmhPace();
          }
          get minkmpace(){
             return this.calcMinkmPace();
         }
 
+        // setterit
+        set hours(h){
+            this.tunnit = h
+        }
+        set minutes(m){
+            this.minuutit = m
+        }
+        set seconds(s){
+            this.sekunnit =s
+        }
+        set kilometers(k){
+            this.kilometrit = k
+        }
+
         // laskumetodit
 
         calcKmhPace() {
-            let tunnit = document.getElementById('h').value+(document.getElementById('min').value*60+document.getElementById('sec').value)/3600;
-            let kmh = document.getElementById('km').value/tunnit;
-            return tunnit
-            return kmh
+           
+         
+            let tunnit = this.tunnit+(this.minuutit*60+this.sekunnit)/3600;
+            let kmh = this.kilometrit/tunnit
+            
+            let div = document.getElementById("result");
+            div.innerHTML =  kmh.toFixed(2) +" km/h"
+            
            
            
         }
         calcMinkmPace() {
+            let sekunnit = this.tunnit*60*60+this.minuutit*60+this.sekunnit;
+             let sekunnitPerKm = sekunnit/this.kilometrit;
+            console.log(sekunnit)
+            console.log(sekunnitPerKm)
+             let minutes = 0
+            
+            
+           
+            while (sekunnitPerKm >= 60){
+             minutes++;
+             sekunnitPerKm = sekunnitPerKm - 60;
+            }
+            sekunnitPerKm = Math.round(sekunnitPerKm);
+            sekunnitPerKm = String('0'+ sekunnitPerKm).slice(-2);
+            
+            let div = document.getElementById("result");
+            div.innerHTML += "<br />"+ minutes+":"+sekunnitPerKm +"/km"
             
         }
-       
+     
+ 
+        
       
     }
-    console.log(Vauhtilaskin.calcKmhPace)
-   
-    
-    
-    
-    
+ 
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+
+
+btn.addEventListener("click", function() {
+    const uusi = new Vauhtilaskin(Number(taulukko.h.value),Number(taulukko.min.value),Number(taulukko.sec.value),Number(taulukko.km.value))
+  
+  
+  console.log(uusi.tunnit);
+  console.log(uusi.minuutit);
+  console.log(uusi.sekunnit);
+  console.log(uusi.kilometrit);
+
+  uusi.kmhpace
+  uusi.minkmpace
+ 
+});
+event.preventDefault();
+});
+
+
+
     </script>
     
 </body>
