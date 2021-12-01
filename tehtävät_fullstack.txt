@@ -22,7 +22,8 @@ H0202: 4/4p Ehkä vastattu siihen mitä kysyttiin, pohdintaa kyllä.
 H0203: 4/4p pohdittu on, liekö oikein vaikea pisteyttää.
 H0204: 4/4p Lady gaga tehtiin tunnilla.
 H0205: 4/4p Mikäli ymmärsin iänlisäyksen oikein.
-H0206: /6p  !!! metodi puuttuu !!!
+H0206: 6/6p  Olipahan vääntö, mutta toimii
+
 H0301: 4/4p toimii hassulla funktiolla.
 H0302: 4/4p toimii
 H0303: /4p  !!! virhevaroitus puuttuu

@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>H0303 arvosanalaskuri</title>
+  <title>H0303 Arvosanalaskuri</title>
 </head>
 
 
 <body>
 
-  <form id=taulukko>
-    <label for="T1"  style="background-color:aqua;">T1</label> <br>
-    <input type="text" id="inputti" name="luvut" onblur="sum()"> <br>
-    <label for="T2" style="background-color:aqua;">T2</label> <br>
-    <input type="text" id="inputti" name="luvut" onblur="sum()"><br>
-    <label for="T3" style="background-color:aqua;">T3</label> <br>
-    <input type="text" id="inputti" name="luvut" onblur="sum()"><br>
-    <label for="T4" style="background-color:aqua;">T4</label> <br>
-    <input type="text" id="inputti" name="luvut" onblur="sum()">
+  <form  id="luvut">
+    <label style="background-color:aqua;">T1</label>  <br>
+    <input type="number" id="input1" name="luvut" onblur="sum()"> <br>
+    <label style="background-color:aqua;">T2</label>  <br>
+    <input type="number" id="input2" name="luvut" onblur="sum()"><br>
+    <label style="background-color:aqua;">T3</label>  <br>
+    <input type="number" id="input3" name="luvut" onblur="sum()"><br>
+    <label style="background-color:aqua;">T4</label> <br>
+    <input type="number" id="input4" name="luvut" onblur="sum()">
 
   </form>
   <p id=pisteet></p>
@@ -26,50 +26,49 @@
   
   <script>
 
+        function sum(){
+  let syote = document.getElementsByName('luvut')
+  let sum = 0;
   
+  for(let i = 0; i < syote.length; i++){
+    if(parseInt(syote[i].value) > 0 && parseInt(syote[i].value) < 7)
+      sum += parseInt(syote[i].value)
 
-    function sum(){
-        let syote = document.getElementsByName('luvut')
-        let sum = 0;
-        
-        for(let i = 0; i < syote.length; i++){
-          if(parseInt(syote[i].value) > 0 && parseInt(syote[i].value) < 7)
-            sum += parseInt(syote[i].value)
-
-            let tuloste1 = document.getElementById('pisteet')
-            tuloste1.innerHTML= "Pistemäärä (summa): "+sum          
-        }       
-        
-       
-        
-       if(sum >= 0 && sum < 13){
-            let grad = document.getElementById('arvosana')
-            grad.innerHTML = "arvosana 0"
-        } 
-        else if(sum > 12 && sum < 16)  {
-          let grad = document.getElementById('arvosana')
-            grad.innerHTML = "arvosana 1"
-        } 
-        else if(sum >= 16 && sum < 18 )  {
-          let grad = document.getElementById('arvosana')
-            grad.innerHTML = "arvosana 2"
-        }
-        else if(sum >= 18 && sum < 20 )  {
-          let grad = document.getElementById('arvosana')
-        
-            grad.innerHTML = "arvosana 3"
-        }    
-        else if(sum >= 20 && sum < 22 )  {
-          let grad = document.getElementById('arvosana')
-            grad.innerHTML = "arvosana 4"  
-        } 
-        else if(sum >= 22 && sum < 25 )  {
-          let grad = document.getElementById('arvosana')
-            grad.innerHTML = "arvosana 5"  
-        }      
-    } 
-
-
+      let tuloste1 = document.getElementById('pisteet')
+      tuloste1.innerHTML= "Pistemäärä (summa): "+sum          
+  }       
+  
+ 
+  
+ if(sum >= 0 && sum < 13){
+      let grad = document.getElementById('arvosana')
+      grad.innerHTML = "arvosana 0"
+  } 
+  else if(sum > 12 && sum < 16)  {
+    let grad = document.getElementById('arvosana')
+      grad.innerHTML = "arvosana 1"
+  } 
+  else if(sum >= 16 && sum < 18 )  {
+    let grad = document.getElementById('arvosana')
+      grad.innerHTML = "arvosana 2"
+  }
+  else if(sum >= 18 && sum < 20 )  {
+    let grad = document.getElementById('arvosana')
+  
+      grad.innerHTML = "arvosana 3"
+  }    
+  else if(sum >= 20 && sum < 22 )  {
+    let grad = document.getElementById('arvosana')
+      grad.innerHTML = "arvosana 4"  
+  } 
+  else if(sum >= 22 && sum < 25 )  {
+    let grad = document.getElementById('arvosana')
+      grad.innerHTML = "arvosana 5"  
+  }      
+} 
+    
     </script>  
 </body>
 </html>
+
+
