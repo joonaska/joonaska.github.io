@@ -1,0 +1,22 @@
+{
+  "name": "h0603",
+  "version": "1.0.0",
+  "description": "H0603 harjoitustehtava",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "h0603"
+  ],
+  "author": "Joonas Kangaskoski",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

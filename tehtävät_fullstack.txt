@@ -5,9 +5,9 @@ Etunimi: Joonas
 Sukunimi: Kangaskoski
 Opiskelijanumero:  [N3303]
 Ratkaisut: https://joonaska.github.io/
-Harjoitustehtäväpisteet: 119
-Kaikki tarjolla olleet harjoitustehtäväpisteet: 119/189
-125/150 = > 83,3 %
+Harjoitustehtäväpisteet: 128
+Kaikki tarjolla olleet harjoitustehtäväpisteet: 128/189
+128/189 = > 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 H0101: 2/2p 
 H0102: 2/2p 
@@ -42,6 +42,7 @@ H0505: 6/6p sama juttu kuin edellisessä, ratkaisu melko simppeli.
 
 H0601: 10/10p seurattu tehtävän antoa ja toimii
 H0602: 5/5p logger middleware, logit tulee txt tiedostoon.
+H0603: 4/5p Joka kerta kun painaa listusers hakee listan edellisen jatkoksi eikä ns. nollaa sivua, mutta ei id ja nimet samat tulee vaan toistoja
 
 H0701:  5/5p tehty pyydetysti
 H0702:  !!!
