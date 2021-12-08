@@ -5,8 +5,8 @@ Etunimi: Joonas
 Sukunimi: Kangaskoski
 Opiskelijanumero:  [N3303]
 Ratkaisut: https://joonaska.github.io/
-Harjoitustehtäväpisteet: 20
-Kaikki tarjolla olleet harjoitustehtäväpisteet: 20/150
+Harjoitustehtäväpisteet: 119
+Kaikki tarjolla olleet harjoitustehtäväpisteet: 119/189
 125/150 = > 83,3 %
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 H0101: 2/2p 
@@ -26,12 +26,12 @@ H0206: 6/6p  Olipahan vääntö, mutta toimii
 
 H0301: 4/4p toimii hassulla funktiolla.
 H0302: 4/4p toimii
-H0303: /4p  !!! virhevaroitus puuttuu
+H0303: 3/4p virhevaroitus puuttuu, muutoin laskee ja päivittää pyydetyllä tavalla, alle 0 tai yli 6 arvoista antaa laskuun 0 eli ei vaikutusta arvosanaan
 H0304: 6/6p tehty tunnilla, itse lisätty yhden rivin poisto klikkaamalla.
 H0305: 6/6p toimii ja kukkuu pyydetysti 
 
 H0401: 6/6 toimii ja kukkuu
-H0402: /6p !!!! pientä viilausta vaille filteröinti
+H0402: 4/6p !!!! pientä viilausta vaille filteröinti
 H0403:     !!!!! tehtävä
 
 H0501: 2/2p toimii
@@ -39,3 +39,14 @@ H0502: 4/4p käy ja kukkuu
 H0503: 4/4p toimii odotetusti
 H0504: 6/6p vaikutti vaikeammalle tehdä kuin lopulta oli
 H0505: 6/6p sama juttu kuin edellisessä, ratkaisu melko simppeli.
+
+H0601: 10/10p seurattu tehtävän antoa ja toimii
+H0602: 5/5p logger middleware, logit tulee txt tiedostoon.
+
+H0701:  5/5p tehty pyydetysti
+H0702:  !!!
+H0703: !!!
+H0704: !!!
+
+H0801: 10/10p ensimmäinen osio tehty
+H0802: !!!
