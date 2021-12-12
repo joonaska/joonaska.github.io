@@ -1,6 +1,6 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 FullStack-ohjelmointi: Harjoitustehtäväväkirjanpito
-28.09.2021
+12.12.2021
 Etunimi: Joonas
 Sukunimi: Kangaskoski
 Opiskelijanumero:  [N3303]
