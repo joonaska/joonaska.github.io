@@ -1,1 +1,0 @@
-mongodb+srv://joonaska:r0kr0k1986@joonaskacluster.yeqox.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
