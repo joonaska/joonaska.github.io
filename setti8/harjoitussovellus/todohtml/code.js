@@ -1,3 +1,5 @@
+const { BSONType } = require('mongodb');
+
 function init() {
   let infoText = document.getElementById('infoText');
   infoText.innerHTML = 'Ladataan tehtävälista palvelimelta, odota...';
@@ -106,10 +108,25 @@ async function removeTodo(id) {
     infoText.innerHTML = 'Ei tehtäviä';
   }
 }
-// async function editTodo(id) {
-//   const response = await fetch('http://localhost:3000/todos/' + id, {
-//     method: 'PUT',
-//   });
-//   let responseJson = await response.json();
-//   let li = document.getElementById(id);
-//   li.parentNode.removeChild(li);
+async function editTodo(id) {
+  const response = await fetch('http://localhost:3000/todos/' + id, {
+    method: 'PUT',
+  });
+  let todos = await response.json();
+  let li = document.getElementById(id);
+  console.log(todos.text);
+
+  document.getElementById('newTodo').value = todos.text;
+
+  let nappi = document.getElementById('btn');
+  nappi.innerHTML = 'Tallenna';
+  nappi.style.background = 'yellow';
+
+  btn.addEventListener('click', function () {
+    removeTodo(id);
+
+    let nappi = document.getElementById('btn');
+    nappi.innerHTML = 'Lisää';
+    nappi.style.background = 'grey';
+  });
+}
