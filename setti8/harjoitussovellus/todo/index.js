@@ -62,6 +62,12 @@ app.delete('/todos/:id', async (request, response) => {
 app.get('/todos', (request, response) => {
   response.send('Todos');
 });
+// päivitys
+app.put('/todos/:id', async (request, response) => {
+  const updatedTodo = await Todo.findByIdAndUpdate(request.params.id);
+  if (updatedTodo) response.json(updatedTodo);
+  else response.status(404).end();
+});
 
 // app listen port 3000
 app.listen(port, () => {
