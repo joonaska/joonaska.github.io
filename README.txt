@@ -50,4 +50,5 @@ H0703: 10/10p toimii ja kukkuu kuin neuvottu.
 H0704:  8/10p tietokannan tein mongodbhen ja kyselyitä sain ajettua kolme
 
 H0801: 10/10p ensimmäinen osio tehty
-H0802: !!!
+H0802: 10/10p toimii uskomatonta kyllä.
+H0803: !!!
