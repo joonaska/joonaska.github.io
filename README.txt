@@ -4,10 +4,10 @@ FullStack-ohjelmointi: Harjoitustehtäväväkirjanpito
 Etunimi: Joonas
 Sukunimi: Kangaskoski
 Opiskelijanumero:  [N3303]
-Ratkaisut: https://joonaska.github.io/
-Harjoitustehtäväpisteet: 149
-Kaikki tarjolla olleet harjoitustehtäväpisteet: 149/189
-149/189 = > 78.8%
+Ratkaisut: https://joonaska.github.io/ jossa ei kaikki toimi kun kansioita, repossa loput https://github.com/joonaska/joonaska.github.io
+Harjoitustehtäväpisteet: 159
+Kaikki tarjolla olleet harjoitustehtäväpisteet: 159/189
+159/189 = > n.84%
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 H0101: 2/2p 
 H0102: 2/2p 
