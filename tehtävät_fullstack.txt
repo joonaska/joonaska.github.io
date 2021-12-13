@@ -5,9 +5,9 @@ Etunimi: Joonas
 Sukunimi: Kangaskoski
 Opiskelijanumero:  [N3303]
 Ratkaisut: https://joonaska.github.io/
-Harjoitustehtäväpisteet: 149
-Kaikki tarjolla olleet harjoitustehtäväpisteet: 149/189
-149/189 = > 78.8%
+Harjoitustehtäväpisteet: 159
+Kaikki tarjolla olleet harjoitustehtäväpisteet: 159/189
+159/189 = > 84%
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 H0101: 2/2p 
 H0102: 2/2p 
@@ -50,4 +50,5 @@ H0703: 10/10p toimii ja kukkuu kuin neuvottu.
 H0704:  8/10p tietokannan tein mongodbhen ja kyselyitä sain ajettua kolme
 
 H0801: 10/10p ensimmäinen osio tehty
-H0802: !!!
+H0802: 10/10p toimii uskomatonta kyllä.
+H0803: !!!
